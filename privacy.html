@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Privacidad — WhatsApp Finance Bot</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            color: #1a1a1a;
+            line-height: 1.7;
+            background: #fafafa;
+        }
+        h1 { color: #075e54; }
+        h2 { color: #333; margin-top: 2rem; }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+        .highlight { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        a { color: #075e54; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>Politica de Privacidad</h1>
+    <p><strong>WhatsApp Finance Bot</strong> — Asistente financiero personal por WhatsApp</p>
+    <p><em>Ultima actualizacion: abril 2026</em></p>
+
+    <h2>1. Que datos recopilamos</h2>
+    <p>Recopilamos unicamente la informacion necesaria para el funcionamiento del servicio:</p>
+    <ul>
+        <li><strong>Numero de telefono:</strong> utilizado como identificador unico de usuario.</li>
+        <li><strong>Mensajes de texto relacionados con finanzas:</strong> montos, categorias, comercios y notas que el usuario envia voluntariamente para registrar gastos e ingresos.</li>
+        <li><strong>Correos electronicos de notificaciones bancarias</strong> (solo si el usuario conecta su Gmail): leemos unicamente correos de bancos chilenos para extraer datos de transacciones (monto, fecha, comercio). No accedemos a ningun otro tipo de correo.</li>
+        <li><strong>Nombre y preferencias:</strong> nombre del usuario, tono de conversacion preferido, y configuracion de recordatorios.</li>
+    </ul>
+
+    <h2>2. Como usamos los datos</h2>
+    <ul>
+        <li>Registrar gastos e ingresos en el archivo Excel personal del usuario.</li>
+        <li>Generar reportes y graficos financieros personalizados.</li>
+        <li>Detectar transacciones bancarias automaticamente desde correos de notificacion.</li>
+        <li>Enviar recordatorios diarios si el usuario los activa.</li>
+    </ul>
+    <p><strong>No usamos los datos para publicidad, perfilamiento, ni ningun otro proposito fuera del servicio descrito.</strong></p>
+
+    <h2>3. Almacenamiento y seguridad</h2>
+    <ul>
+        <li>Los datos financieros se almacenan en un archivo Excel en <strong>Microsoft OneDrive</strong>, accesible unicamente por el usuario registrado.</li>
+        <li>Las credenciales de acceso a Gmail (refresh tokens) se almacenan <strong>encriptadas</strong> en el servidor.</li>
+        <li>El historial de conversacion se almacena localmente en el servidor y se limita a los ultimos 20 mensajes.</li>
+        <li>No almacenamos el contenido completo de los correos electronicos. Solo extraemos y guardamos los datos de la transaccion (monto, fecha, comercio).</li>
+    </ul>
+
+    <h2>4. Comparticion de datos con terceros</h2>
+    <p><strong>No vendemos, compartimos ni transferimos datos personales a terceros.</strong></p>
+    <p>Los unicos servicios externos que procesan datos son:</p>
+    <ul>
+        <li><strong>WhatsApp Cloud API (Meta):</strong> para enviar y recibir mensajes.</li>
+        <li><strong>Anthropic Claude API:</strong> para interpretar mensajes de texto (el contenido se envia para procesamiento de lenguaje natural; Anthropic no retiene los datos).</li>
+        <li><strong>Google Gmail API:</strong> para leer notificaciones bancarias (solo lectura).</li>
+        <li><strong>Microsoft OneDrive:</strong> para almacenar el archivo Excel del usuario.</li>
+    </ul>
+
+    <div class="highlight">
+        <h2 style="margin-top:0">5. Uso de datos de Google APIs</h2>
+        <p>El uso y transferencia a cualquier otra aplicacion de la informacion recibida de las APIs de Google cumplira con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, incluyendo los requisitos de Limited Use (Uso Limitado).</p>
+        <p>Especificamente:</p>
+        <ul>
+            <li>Solo solicitamos el permiso <code>gmail.readonly</code> (lectura de correos).</li>
+            <li>Usamos este acceso unicamente para leer correos de notificaciones bancarias y extraer datos de transacciones.</li>
+            <li>No usamos los datos de Gmail para publicidad, estudios de mercado ni perfilamiento.</li>
+            <li>No compartimos los datos de Gmail con terceros, excepto segun sea necesario para el funcionamiento del servicio (procesamiento de lenguaje natural para interpretar el contenido del correo bancario).</li>
+            <li>No permitimos que humanos lean los correos del usuario, salvo con consentimiento explicito, por razones de seguridad, o para cumplimiento legal.</li>
+        </ul>
+    </div>
+
+    <h2>6. Control del usuario</h2>
+    <ul>
+        <li><strong>Revocar acceso a Gmail:</strong> en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a> o escribiendo "desconectar correo" al bot.</li>
+        <li><strong>Eliminar datos:</strong> el usuario puede solicitar la eliminacion de sus datos enviando un mensaje al bot o contactandonos por email.</li>
+        <li><strong>Acceso al Excel:</strong> el archivo Excel es propiedad del usuario y esta en su OneDrive personal.</li>
+        <li><strong>Desactivar recordatorios:</strong> escribiendo "desactivar recordatorio" al bot.</li>
+    </ul>
+
+    <h2>7. Contacto</h2>
+    <p>Para preguntas, solicitudes de datos o eliminacion de cuenta:</p>
+    <p>Email: <a href="mailto:milan_campos@hotmail.com">milan_campos@hotmail.com</a></p>
+
+    <footer>
+        <p><a href="home.html">Volver a la pagina principal</a> &nbsp;|&nbsp; &copy; 2026 WhatsApp Finance Bot</p>
+    </footer>
+</body>
+</html>
